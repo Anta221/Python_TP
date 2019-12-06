@@ -1,11 +1,15 @@
+import database
 from flask import Flask, request, render_template, redirect, url_for
 import json
 
+
 app = Flask(__name__)
+
 
 @app.route('/')
 def home():
-  return 'Bienvenue !'
+      return 'Bienvenue ici!'
+
 
 @app.route('/devices', methods=['GET'])
 def devices():
