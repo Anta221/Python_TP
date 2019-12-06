@@ -17,14 +17,16 @@ def devices():
   devices = parse_from_json()
   return render_template("devices.html", devices=devices)
 
+
+
 def parse_from_json():
   devices = []
   with open('./devices.json', 'r') as f:
     data = json.loads(f.read())
-    for id in data:
-      devices.append({"id": id,
-                      "name": data[id]["name"],
-                      "rssi": data[id]["rssi"] if "rssi" in data[id] else "?"})
+    for device in data:
+      devices.append({"id": device["id"],
+                      "name": device["name"],
+                      "rssi": device["rssi"] if "rssi" in device else "?"})
     return devices
 
 def dump_to_json(devices):
