@@ -17,3 +17,16 @@ The code currently provides two simple scripts:
 
 An devices.json file is provided as an example.
 The bluetooth code in `blscan` uses PyBluez library.
+
+
+Amélioration : 
+
+- *horodatage et localisation (GPS +IP)
+- *Base de donnée
+- Actualisation automatique des info  sur la page web 
+- Actualisation automatique du scan (daemon)
+- authentification 
+- front 
+- informations sur les périphériques 
+- héberger/ déployer 
+- mutualiser 
