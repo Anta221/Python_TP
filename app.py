@@ -6,9 +6,10 @@ import json
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/homePage', methods=['GET'])
 def home():
-      return 'Bienvenue ici!'
+  homePage = parse_from_json()
+  return render_template("PythonHtml.html", homePage=homePage)
 
 
 @app.route('/devices', methods=['GET'])
