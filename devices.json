@@ -12,7 +12,8 @@
     "rssi": -67
   },
   "24:FC:E5:C0:74:2E": {
-    "name": "[TV] Samsung Frame Series (43)"
+    "name": "[TV] Samsung Frame Series (43)",
+    "rssi": -67
   },
   "30:15:01:21:23:92": {
     "name": "NeoMatrix",
